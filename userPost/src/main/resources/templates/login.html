@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<h2 align="center">Login page</h2>
+<table align="center">
+    <form id="loginForm" modelAttribute="login" action="loginprocess" method="post">
+    <div class="container">
+
+
+   <tr>
+       <td>
+           <label ><b>Username</b></label>
+       </td>
+       <td>
+        <input type="text" placeholder="Enter Username" name="username" required>
+       </td>
+   </tr>
+        <tr></tr>
+            <tr>
+       <td>
+        <label ><b>Password</b></label>
+       </td>
+       <td>
+        <input type="password" placeholder="Enter Password" name="password" required>
+       </td>
+   </tr>
+        <tr></tr>
+        <tr></tr>  <tr></tr>
+
+   <tr>
+       <td>
+        <input type="submit" value="test" ></input>
+       </td>
+       <td>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+       </td>
+   </tr>
+        <tr>
+      <td>
+            <p id="error" th:text=" ${name} + '!'" style="color:red;"  ></p>
+      </td>
+        </tr>
+    </div>
+
+</form>
+</table>
+</body>
+</html>

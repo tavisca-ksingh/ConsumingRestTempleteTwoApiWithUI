@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Registration</title>
+</head>
+<body>
+<h2 align="center">Sign Up Form</h2>
+
+<form id="regForm" modelAttribute="signup" action="registerProcess" method="post">
+    <table align="center">
+        <tr>
+            <td>
+                <label path="username">Username</label>
+            </td>
+            <td>
+                <input path="username" name="username" id="username" required/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label path="password">Password</label>
+            </td>
+            <td>
+                <input password path="password" name="password" id="password" type="password" required/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label path="Salary">Salary</label>
+            </td>
+            <td>
+                <input path="Salary" name="Salary" id="Salary" required/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label path="Designation">Designation</label>
+            </td>
+            <td>
+                <input path="Designation" name="Designation" id="Designation" required/>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button id="register" name="register">Register</button>
+            </td>
+        </tr>
+        <tr></tr>
+
+    </table>
+</form>
+</body>
+
+</html>
